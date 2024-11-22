@@ -1,0 +1,162 @@
+/* màu
+#54643a xanh
+#947a5c vàng
+#b3a89e vàng nhạt
+#6f6b62 nâu
+#202b27 xanh đậm
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body {
+    color: white !important;
+    font-family: 'Roboto' !important;
+    box-sizing: border-box;
+}
+.header {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: url(/assets/img/background-header.jpg);
+    background-size: cover;
+}
+
+.custom-nav {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+
+}
+
+.custom-nav-collapse {
+    justify-content: space-between;
+    margin: 0 1rem;
+    padding: 1rem 2rem;
+}
+
+.custom-navbar-ul {
+    margin: auto;
+    gap: 2rem;
+    list-style: none;
+    display: flex;
+}
+
+.custom-navbar-ul li a {
+    color: white;
+}
+
+.custom-menu li a {
+    color: black;
+
+}
+
+.nav-item a {
+    text-decoration: none;
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.heading {
+    font-size: 46px;
+    font-weight: 900;
+}
+
+.sub-heading {
+    text-align: center;
+}
+
+
+.custom-container {
+    margin-top: 1rem;
+}
+.main-container {}
+
+.main-container-sub1 {
+    padding: 2rem 12rem;
+    color: #333;
+}
+.sub1-heading {
+    margin-bottom: 1rem
+}
+.heading {}
+.grid-container {
+    display: grid;
+    grid-template-rows: repeat(2, 180px);
+    grid-template-areas:
+        "aa aa bb dd dd"
+        "aa aa cc ee ff";
+    grid-gap: 15px;
+}
+.grid-items {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    cursor: pointer;
+    height: 100%;
+    box-shadow: 0 4px 8px 0 #333;
+    border-radius: 5px;
+}
+.grid-items:hover {
+    scale: 1.03;
+    transition: all 0.6s ease;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+.overlay-heading {
+    color: #947a5c;
+    margin: 0 !important;
+}
+.overlay-subheading {
+    font-weight: 900;
+    margin: 0 !important;
+}
+.grid-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.grid-item-1 {
+    grid-area: aa;
+}
+.grid-item-1:hover {
+    grid-area: aa;
+}
+.grid-item-2 {
+    grid-area: bb;
+}
+.grid-item-3 {
+    grid-area: cc;
+}
+.grid-item-4 {
+    grid-area: dd;
+}
+
+.grid-item-5 {
+    grid-area: ee;
+}
+.grid-item-6 {
+    grid-area: ff;
+}
+
+.grid-items:hover .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+}
